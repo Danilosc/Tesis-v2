@@ -1,0 +1,6 @@
+ID,Nodo 1,Nodo 2,Fases,Tipo de Cable
+1,1,2,3,C1
+2,2,3,3,C2
+3,3,4,3,C3
+4,3,5,3,C3
+5,4,6,3,C1

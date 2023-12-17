@@ -1,0 +1,155 @@
+! Definición de monitores
+set controlmode = static
+set mode = yearly
+set number = 8760 !horas
+set stepsize = 1h
+New EnergyMeter.meter1 element=transformer.tf1 Terminal=1
+New monitor.MonitorVolpolar1 element=line.Linea1 Terminal=1 mode=16 
+New monitor.MonitorVolpolar2 element=line.Linea2 Terminal=1 mode=16 
+New monitor.MonitorVolpolar3 element=line.Linea3 Terminal=1 mode=16 
+New monitor.MonitorVolpolar4 element=line.Linea4 Terminal=1 mode=16 
+New monitor.MonitorVolpolar5 element=line.Linea5 Terminal=1 mode=16 
+New monitor.MonitorVolpolar6 element=line.Linea6 Terminal=1 mode=16 
+New monitor.MonitorVolpolar7 element=line.Linea7 Terminal=1 mode=16 
+New monitor.MonitorVolpolar8 element=line.Linea8 Terminal=1 mode=16 
+New monitor.MonitorVolpolar9 element=line.Linea9 Terminal=1 mode=16 
+New monitor.MonitorVolpolar10 element=line.Linea10 Terminal=1 mode=16 
+New monitor.MonitorVolpolar11 element=line.Linea11 Terminal=1 mode=16 
+New monitor.MonitorVolpolar12 element=line.Linea12 Terminal=1 mode=16 
+New monitor.MonitorVolpolar13 element=line.Linea13 Terminal=1 mode=16 
+New monitor.MonitorVolpolar14 element=line.Linea14 Terminal=1 mode=16 
+New monitor.MonitorVolpolar15 element=line.Linea15 Terminal=1 mode=16 
+New monitor.MonitorVolpolar16 element=line.Linea16 Terminal=1 mode=16 
+New monitor.MonitorVolpolar17 element=line.Linea17 Terminal=1 mode=16 
+New monitor.MonitorVolpolar18 element=line.Linea18 Terminal=1 mode=16 
+New monitor.MonitorVolpolar19 element=line.Linea19 Terminal=1 mode=16 
+New monitor.MonitorVolpolar20 element=line.Linea20 Terminal=1 mode=16 
+New monitor.MonitorVolpolar21 element=line.Linea21 Terminal=1 mode=16 
+New monitor.MonitorVolpolar22 element=line.Linea22 Terminal=1 mode=16 
+New monitor.MonitorVolpolar23 element=line.Linea23 Terminal=1 mode=16 
+New monitor.MonitorVolpolar24 element=line.Linea24 Terminal=1 mode=16 
+New monitor.MonitorVolpolar25 element=line.Linea25 Terminal=1 mode=16 
+New monitor.MonitorVolpolar26 element=line.Linea26 Terminal=1 mode=16 
+New monitor.MonitorVolpolar27 element=line.Linea27 Terminal=1 mode=16 
+New monitor.MonitorVolpolar28 element=line.Linea28 Terminal=1 mode=16 
+New monitor.MonitorVolpolar29 element=line.Linea29 Terminal=1 mode=16 
+New monitor.MonitorVolpolar30 element=line.Linea30 Terminal=1 mode=16 
+New monitor.MonitorVolpolar31 element=line.Linea31 Terminal=1 mode=16 
+New monitor.MonitorVolpolar32 element=line.Linea32 Terminal=1 mode=16 
+New monitor.MonitorVolpolar33 element=line.Linea33 Terminal=1 mode=16 
+New monitor.MonitorVolpolar34 element=line.Linea34 Terminal=1 mode=16 
+New monitor.MonitorVolpolar35 element=line.Linea35 Terminal=1 mode=16 
+New monitor.MonitorVolpolar36 element=line.Linea36 Terminal=1 mode=16 
+New monitor.MonitorVolpolar37 element=line.Linea37 Terminal=1 mode=16 
+New monitor.Monitorvollin1 element=line.Linea1 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin2 element=line.Linea2 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin3 element=line.Linea3 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin4 element=line.Linea4 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin5 element=line.Linea5 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin6 element=line.Linea6 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin7 element=line.Linea7 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin8 element=line.Linea8 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin9 element=line.Linea9 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin10 element=line.Linea10 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin11 element=line.Linea11 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin12 element=line.Linea12 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin13 element=line.Linea13 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin14 element=line.Linea14 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin15 element=line.Linea15 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin16 element=line.Linea16 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin17 element=line.Linea17 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin18 element=line.Linea18 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin19 element=line.Linea19 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin20 element=line.Linea20 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin21 element=line.Linea21 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin22 element=line.Linea22 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin23 element=line.Linea23 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin24 element=line.Linea24 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin25 element=line.Linea25 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin26 element=line.Linea26 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin27 element=line.Linea27 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin28 element=line.Linea28 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin29 element=line.Linea29 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin30 element=line.Linea30 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin31 element=line.Linea31 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin32 element=line.Linea32 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin33 element=line.Linea33 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin34 element=line.Linea34 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin35 element=line.Linea35 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin36 element=line.Linea36 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorvollin37 element=line.Linea37 Terminal=1 mode=0 ppolar=no
+New monitor.Monitortvolnodotf1 element=transformer.TF1 Terminal=1 mode=0 ppolar=no
+New monitor.Monitortpownodotf1 element=transformer.TF1 Terminal=1 mode=1 ppolar=no
+New monitor.Monitortlossnodotf1 element=transformer.TF1 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorpownodo2 element=load.Load2 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo2 element=load.Load2 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo3 element=load.Load3 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo3 element=load.Load3 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo4 element=load.Load4 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo4 element=load.Load4 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo5 element=load.Load5 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo5 element=load.Load5 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo6 element=load.Load6 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo6 element=load.Load6 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo7 element=load.Load7 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo7 element=load.Load7 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo8 element=load.Load8 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo8 element=load.Load8 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo9 element=load.Load9 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo9 element=load.Load9 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo10 element=load.Load10 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo10 element=load.Load10 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo11 element=load.Load11 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo11 element=load.Load11 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo12 element=load.Load12 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo12 element=load.Load12 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo13 element=load.Load13 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo13 element=load.Load13 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo14 element=load.Load14 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo14 element=load.Load14 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo15 element=load.Load15 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo15 element=load.Load15 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo16 element=load.Load16 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo16 element=load.Load16 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo17 element=load.Load17 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo17 element=load.Load17 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo18 element=load.Load18 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo18 element=load.Load18 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo19 element=load.Load19 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo19 element=load.Load19 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo20 element=load.Load20 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo20 element=load.Load20 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo21 element=load.Load21 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo21 element=load.Load21 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo22 element=load.Load22 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo22 element=load.Load22 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo23 element=load.Load23 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo23 element=load.Load23 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo24 element=load.Load24 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo24 element=load.Load24 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo25 element=load.Load25 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo25 element=load.Load25 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo26 element=load.Load26 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo26 element=load.Load26 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo27 element=load.Load27 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo27 element=load.Load27 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo28 element=load.Load28 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo28 element=load.Load28 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo29 element=load.Load29 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo29 element=load.Load29 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo30 element=load.Load30 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo30 element=load.Load30 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo31 element=load.Load31 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo31 element=load.Load31 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo32 element=load.Load32 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo32 element=load.Load32 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpownodo33 element=load.Load33 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo33 element=load.Load33 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpowgen18 element=generator.generador18 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolgen18 element=generator.generador18 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpowgen22 element=generator.generador22 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolgen22 element=generator.generador22 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpowgen25 element=generator.generador25 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolgen25 element=generator.generador25 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorpowgen33 element=generator.generador33 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolgen33 element=generator.generador33 Terminal=1 mode=0 ppolar=no

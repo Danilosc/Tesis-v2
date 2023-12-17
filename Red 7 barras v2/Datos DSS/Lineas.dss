@@ -1,0 +1,21 @@
+new line.Linea1 bus1=1 bus2=2 length=100 phases=3 units=m linecode=C1-2 
+new line.Linea2 bus1=2 bus2=3 length=500 phases=3 units=m linecode=C2-3 
+new line.Linea3 bus1=3 bus2=4 length=350 phases=3 units=m linecode=C3-4 
+new line.Linea4 bus1=4 bus2=5 length=350 phases=3 units=m linecode=C4-5 
+new line.Linea5 bus1=5 bus2=6 length=800 phases=3 units=m linecode=C5-6 
+new line.Linea6 bus1=6 bus2=7 length=200 phases=3 units=m linecode=C6-7 
+new load.Load2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=100 kvar=60 model=1 yearly=perfilcarga1 status=variable
+new load.LoadEVdom2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario1 status=variable
+new load.Load3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga2 status=variable
+new load.LoadEVdom3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario2 status=variable
+new load.Load4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=120 kvar=80 model=1 yearly=perfilcarga3 status=variable
+new load.LoadEVdom4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario3 status=variable
+new load.Load5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=30 model=1 yearly=perfilcarga4 status=variable
+new load.LoadEVdom5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario4 status=variable
+new load.Load6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga5 status=variable
+new load.LoadEVdom6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario5 status=variable
+new load.Load7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=200 kvar=100 model=1 yearly=perfilcarga6 status=variable
+new load.LoadEVdom7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario6 status=variable
+new generator.generador07 bus1=7.1.2.3 phases=3 conn=wye kV=12.6 kW=400 kvar=0 model=1 yearly=perfilgeneracion1 status=variable enable=yes
+set voltagebases=12.66
+ calcvoltagebases

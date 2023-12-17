@@ -1,0 +1,114 @@
+new line.Linea1 bus1=1 bus2=2 length=100 phases=3 units=m linecode=C1-2 
+new line.Linea2 bus1=2 bus2=3 length=500 phases=3 units=m linecode=C2-3 
+new line.Linea3 bus1=3 bus2=4 length=350 phases=3 units=m linecode=C3-4 
+new line.Linea4 bus1=4 bus2=5 length=350 phases=3 units=m linecode=C4-5 
+new line.Linea5 bus1=5 bus2=6 length=800 phases=3 units=m linecode=C5-6 
+new line.Linea6 bus1=6 bus2=7 length=200 phases=3 units=m linecode=C6-7 
+new line.Linea7 bus1=7 bus2=8 length=700 phases=3 units=m linecode=C7-8 
+new line.Linea8 bus1=8 bus2=9 length=1000 phases=3 units=m linecode=C8-9 
+new line.Linea9 bus1=9 bus2=10 length=1000 phases=3 units=m linecode=C9-10 
+new line.Linea10 bus1=10 bus2=11 length=200 phases=3 units=m linecode=C10-11 
+new line.Linea11 bus1=11 bus2=12 length=350 phases=3 units=m linecode=C11-12 
+new line.Linea12 bus1=12 bus2=13 length=1500 phases=3 units=m linecode=C12-13 
+new line.Linea13 bus1=13 bus2=14 length=550 phases=3 units=m linecode=C13-14 
+new line.Linea14 bus1=14 bus2=15 length=600 phases=3 units=m linecode=C14-15 
+new line.Linea15 bus1=15 bus2=16 length=750 phases=3 units=m linecode=C15-16 
+new line.Linea16 bus1=16 bus2=17 length=1300 phases=3 units=m linecode=C16-17 
+new line.Linea17 bus1=17 bus2=18 length=700 phases=3 units=m linecode=C17-18 
+new line.Linea18 bus1=2 bus2=19 length=150 phases=3 units=m linecode=C2-19 
+new line.Linea19 bus1=19 bus2=20 length=1500 phases=3 units=m linecode=C19-20 
+new line.Linea20 bus1=20 bus2=21 length=400 phases=3 units=m linecode=C20-21 
+new line.Linea21 bus1=21 bus2=22 length=700 phases=3 units=m linecode=C21-22 
+new line.Linea22 bus1=3 bus2=23 length=450 phases=3 units=m linecode=C3-23 
+new line.Linea23 bus1=23 bus2=24 length=900 phases=3 units=m linecode=C23-24 
+new line.Linea24 bus1=24 bus2=25 length=900 phases=3 units=m linecode=C24-25 
+new line.Linea25 bus1=6 bus2=26 length=200 phases=3 units=m linecode=C6-26 
+new line.Linea26 bus1=26 bus2=27 length=300 phases=3 units=m linecode=C26-27 
+new line.Linea27 bus1=27 bus2=28 length=1000 phases=3 units=m linecode=C27-28 
+new line.Linea28 bus1=28 bus2=29 length=800 phases=3 units=m linecode=C28-29 
+new line.Linea29 bus1=29 bus2=30 length=500 phases=3 units=m linecode=C29-30 
+new line.Linea30 bus1=30 bus2=31 length=950 phases=3 units=m linecode=C30-31 
+new line.Linea31 bus1=31 bus2=32 length=300 phases=3 units=m linecode=C31-32 
+new line.Linea32 bus1=32 bus2=33 length=350 phases=3 units=m linecode=C32-33 
+new line.Linea33 bus1=25 bus2=29 length=250 phases=3 units=m linecode=C25-29 
+new line.Linea34 bus1=8 bus2=21 length=2000 phases=3 units=m linecode=C8-21 
+new line.Linea35 bus1=12 bus2=22 length=2000 phases=3 units=m linecode=C12-22 
+new line.Linea36 bus1=9 bus2=15 length=2000 phases=3 units=m linecode=C9-15 
+new line.Linea37 bus1=18 bus2=33 length=500 phases=3 units=m linecode=C18-33 
+new load.Load2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=100 kvar=60 model=1 yearly=perfilcarga1 status=variable
+new load.LoadEVdom2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario1 status=variable
+new load.Load3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga2 status=variable
+new load.LoadEVdom3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario2 status=variable
+new load.Load4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=120 kvar=80 model=1 yearly=perfilcarga3 status=variable
+new load.LoadEVdom4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario3 status=variable
+new load.Load5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=30 model=1 yearly=perfilcarga4 status=variable
+new load.LoadEVdom5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario4 status=variable
+new load.Load6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga5 status=variable
+new load.LoadEVdom6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario5 status=variable
+new load.Load7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=200 kvar=100 model=1 yearly=perfilcarga6 status=variable
+new load.LoadEVdom7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario6 status=variable
+new load.Load8 bus1=8.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=100 model=1 yearly=perfilcarga7 status=variable
+new load.LoadEVdom8 bus1=8.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario7 status=variable
+new load.Load9 bus1=9.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga8 status=variable
+new load.LoadEVdom9 bus1=9.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario8 status=variable
+new load.Load10 bus1=10.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga9 status=variable
+new load.LoadEVdom10 bus1=10.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario9 status=variable
+new load.Load11 bus1=11.3 phases=1 conn=wye kV=7.3092 kW=45 kvar=30 model=1 yearly=perfilcarga10 status=variable
+new load.LoadEVdom11 bus1=11.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario10 status=variable
+new load.Load12 bus1=12.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=35 model=1 yearly=perfilcarga11 status=variable
+new load.LoadEVdom12 bus1=12.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario11 status=variable
+new load.Load13 bus1=13.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=35 model=1 yearly=perfilcarga12 status=variable
+new load.LoadEVdom13 bus1=13.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario12 status=variable
+new load.Load14 bus1=14.1.3 phases=2 conn=wye kV=12.6 kW=120 kvar=80 model=1 yearly=perfilcarga13 status=variable
+new load.LoadEVdom14 bus1=14.1.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario13 status=variable
+new load.Load15 bus1=15.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=10 model=1 yearly=perfilcarga14 status=variable
+new load.LoadEVdom15 bus1=15.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario14 status=variable
+new load.Load16 bus1=16.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga15 status=variable
+new load.LoadEVdom16 bus1=16.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario15 status=variable
+new load.Load17 bus1=17.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga16 status=variable
+new load.LoadEVdom17 bus1=17.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario16 status=variable
+new load.Load18 bus1=18.3 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga17 status=variable
+new load.LoadEVdom18 bus1=18.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario17 status=variable
+new load.Load19 bus1=19.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga18 status=variable
+new load.LoadEVdom19 bus1=19.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario18 status=variable
+new load.Load20 bus1=20.2 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga19 status=variable
+new load.LoadEVdom20 bus1=20.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario19 status=variable
+new load.Load21 bus1=21.3 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga20 status=variable
+new load.LoadEVdom21 bus1=21.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario20 status=variable
+new load.Load22 bus1=22.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga21 status=variable
+new load.LoadEVdom22 bus1=22.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario21 status=variable
+new load.Load23 bus1=23.2 phases=1 conn=wye kV=7.3092 kW=90 kvar=50 model=1 yearly=perfilcarga22 status=variable
+new load.LoadEVdom23 bus1=23.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario22 status=variable
+new load.Load24 bus1=24.1.2.3 phases=3 conn=wye kV=12.6 kW=420 kvar=200 model=1 yearly=perfilcarga23 status=variable
+new load.LoadEVdom24 bus1=24.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario23 status=variable
+new load.Load25 bus1=25.1.2.3 phases=3 conn=delta kV=12.6 kW=420 kvar=200 model=1 yearly=perfilcarga24 status=variable
+new load.LoadEVdom25 bus1=25.1.2.3 phases=3 conn=delta kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario24 status=variable
+new load.Load26 bus1=26.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=25 model=1 yearly=perfilcarga25 status=variable
+new load.LoadEVdom26 bus1=26.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario25 status=variable
+new load.Load27 bus1=27.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=25 model=1 yearly=perfilcarga26 status=variable
+new load.LoadEVdom27 bus1=27.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario26 status=variable
+new load.Load28 bus1=28.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga27 status=variable
+new load.LoadEVdom28 bus1=28.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario27 status=variable
+new load.Load29 bus1=29.1.2 phases=2 conn=wye kV=12.6 kW=120 kvar=70 model=1 yearly=perfilcarga28 status=variable
+new load.LoadEVdom29 bus1=29.1.2 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario28 status=variable
+new load.Load30 bus1=30.3 phases=1 conn=wye kV=7.3092 kW=200 kvar=100 model=1 yearly=perfilcarga29 status=variable
+new load.LoadEVdom30 bus1=30.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario29 status=variable
+new load.Load31 bus1=31.2.3 phases=2 conn=wye kV=12.6 kW=150 kvar=70 model=1 yearly=perfilcarga30 status=variable
+new load.LoadEVdom31 bus1=31.2.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario30 status=variable
+new load.Load32 bus1=32.1.2.3 phases=3 conn=wye kV=12.6 kW=210 kvar=100 model=1 yearly=perfilcarga31 status=variable
+new load.LoadEVdom32 bus1=32.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario31 status=variable
+new load.Load33 bus1=33.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=40 model=1 yearly=perfilcarga32 status=variable
+new load.LoadEVdom33 bus1=33.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario32 status=variable
+new generator.generador18 bus1=18.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion1 status=variable enable=no
+new generator.generador22 bus1=22.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion2 status=variable enable=no
+new generator.generador25 bus1=25.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion3 status=variable enable=no
+new generator.generador33 bus1=33.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion4 status=variable enable=no
+new swtcontrol.switch1 action=open delay=0 switchedObj=line.Linea33
+new swtcontrol.switch2 action=open delay=0 switchedObj=line.Linea34
+new swtcontrol.switch3 action=open delay=0 switchedObj=line.Linea35
+new swtcontrol.switch4 action=open delay=0 switchedObj=line.Linea36
+new swtcontrol.switch5 action=open delay=0 switchedObj=line.Linea37
+new capacitor.cap1 bus1=18.1.2.3 phases=3 conn=wye kV=12.6 kvar=400 enable = yes
+new capacitor.cap2 bus1=33.1.2.3 phases=3 conn=wye kV=12.6 kvar=600 enable = yes
+set voltagebases=12.66
+ calcvoltagebases

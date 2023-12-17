@@ -1,0 +1,16 @@
+new line.Linea1 bus1=1 bus2=2 length=1 phases=3 units=km linecode=C1
+new line.Linea2 bus1=2 bus2=3 length=1 phases=3 units=km linecode=C2
+new line.Linea3 bus1=3 bus2=4 length=1 phases=3 units=km linecode=C3
+new line.Linea4 bus1=3 bus2=5 length=1.5 phases=3 units=km linecode=C3
+new line.Linea5 bus1=4 bus2=6 length=1 phases=3 units=km linecode=C1
+new load.LoadEV1 bus1=1 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS1 status=variable
+new load.Load2 bus1=2 phases=3 kV=23 kW=2750 kvar=968 model=1 yearly=perfilcarga1 status=variable
+new load.LoadEV2 bus1=2 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS2 status=variable
+new load.Load3 bus1=3 phases=3 kV=23 kW=2750 kvar=968 model=1 yearly=perfilcarga2 status=variable
+new load.LoadEV3 bus1=3 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS3 status=variable
+new load.Load4 bus1=4 phases=3 kV=23 kW=2750 kvar=968 model=1 yearly=perfilcarga3 status=variable
+new load.LoadEV4 bus1=4 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS4 status=variable
+new load.Load5 bus1=5 phases=3 kV=23 kW=2750 kvar=968 model=1 yearly=perfilcarga4 status=variable
+new load.LoadEV5 bus1=5 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS5 status=variable
+new generator.generador6 bus1=6 phases=3 kV=23 kW=10000 kvar=0 model=1 yearly=perfilgeneracion1 status=variable
+new load.LoadEV6 bus1=6 phases=3 kV=23 kW=500 kvar=0 model=1 yearly=perfilEVCS6 status=variable

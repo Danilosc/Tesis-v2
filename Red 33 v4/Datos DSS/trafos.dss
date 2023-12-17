@@ -1,0 +1,1 @@
+new transformer.TF1 phases=3 windings=2 buses=(sourcebus, 1) conns=(wye, wye) kvs=(132, 12.6) kvas=(5200, 5200) %loadloss=1.2 xhl=12.5 

@@ -1,0 +1,16 @@
+new linecode.C1 nphases=3 R1=0.29453 X1=0.32 units=km 
+new linecode.C5 nphases=3 R1=2.1524 X1=2.3385 units=km 
+new linecode.C4 nphases=3 R1=1.6459 X1=1.7882 units=km 
+new linecode.C2 nphases=3 R1=0.4513 X1=0.49032 units=km 
+new linecode.C3 nphases=3 R1=0.82296 X1=0.89412 units=km 
+new loadshape.perfilcarga1 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=1 header=yes) 
+new loadshape.perfilcarga2 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=2 header=yes) 
+new loadshape.perfilcarga3 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=3 header=yes) 
+new loadshape.perfilcarga4 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=4 header=yes) 
+new loadshape.perfilgeneracion1 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=1 header=yes) 
+new loadshape.perfilEVCS1 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS2 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS3 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS4 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS5 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS6 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 

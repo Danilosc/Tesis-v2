@@ -1,0 +1,121 @@
+new linecode.C1-2 nphases=3 R1=0.922 X1=0.47 units=km 
+new linecode.C2-3 nphases=3 R1=0.986 X1=0.5022 units=km 
+new linecode.C3-4 nphases=3 R1=1.0457 X1=0.53257 units=km 
+new linecode.C4-5 nphases=3 R1=1.0889 X1=0.55457 units=km 
+new linecode.C5-6 nphases=3 R1=1.0237 X1=0.88375 units=km 
+new linecode.C6-7 nphases=3 R1=0.936 X1=3.094 units=km 
+new linecode.C7-8 nphases=3 R1=1.0163 X1=0.33586 units=km 
+new linecode.C8-9 nphases=3 R1=1.03 X1=0.74 units=km 
+new linecode.C9-10 nphases=3 R1=1.044 X1=0.74 units=km 
+new linecode.C10-11 nphases=3 R1=0.983 X1=0.325 units=km 
+new linecode.C11-12 nphases=3 R1=1.0697 X1=0.35371 units=km 
+new linecode.C12-13 nphases=3 R1=0.97867 X1=0.77 units=km 
+new linecode.C13-14 nphases=3 R1=0.98473 X1=1.2962 units=km 
+new linecode.C14-15 nphases=3 R1=0.985 X1=0.87667 units=km 
+new linecode.C15-16 nphases=3 R1=0.99507 X1=0.72667 units=km 
+new linecode.C16-17 nphases=3 R1=0.99154 X1=1.3238 units=km 
+new linecode.C17-18 nphases=3 R1=1.0457 X1=0.82 units=km 
+new linecode.C2-19 nphases=3 R1=1.0933 X1=1.0433 units=km 
+new linecode.C19-20 nphases=3 R1=1.0028 X1=0.9036 units=km 
+new linecode.C20-21 nphases=3 R1=1.0237 X1=1.196 units=km 
+new linecode.C21-22 nphases=3 R1=1.0127 X1=1.339 units=km 
+new linecode.C3-23 nphases=3 R1=1.0027 X1=0.68511 units=km 
+new linecode.C23-24 nphases=3 R1=0.99778 X1=0.78789 units=km 
+new linecode.C24-25 nphases=3 R1=0.99556 X1=0.779 units=km 
+new linecode.C6-26 nphases=3 R1=1.015 X1=0.517 units=km 
+new linecode.C26-27 nphases=3 R1=0.94733 X1=0.48233 units=km 
+new linecode.C27-28 nphases=3 R1=1.059 X1=0.9337 units=km 
+new linecode.C28-29 nphases=3 R1=1.0052 X1=0.87575 units=km 
+new linecode.C29-30 nphases=3 R1=1.015 X1=0.517 units=km 
+new linecode.C30-31 nphases=3 R1=1.0257 X1=1.0137 units=km 
+new linecode.C31-32 nphases=3 R1=1.035 X1=1.2063 units=km 
+new linecode.C32-33 nphases=3 R1=0.97429 X1=1.5149 units=km 
+new linecode.C25-29 nphases=3 R1=2 X1=2 units=km 
+new linecode.C8-21 nphases=3 R1=1 X1=1 units=km 
+new linecode.C12-22 nphases=3 R1=1 X1=1 units=km 
+new linecode.C9-15 nphases=3 R1=1 X1=1 units=km 
+new linecode.C18-33 nphases=3 R1=1 X1=1 units=km 
+new loadshape.perfilcarga1 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=1 header=no) 
+new loadshape.perfilcarga2 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=2 header=no) 
+new loadshape.perfilcarga3 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=3 header=no) 
+new loadshape.perfilcarga4 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=4 header=no) 
+new loadshape.perfilcarga5 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=5 header=no) 
+new loadshape.perfilcarga6 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=6 header=no) 
+new loadshape.perfilcarga7 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=7 header=no) 
+new loadshape.perfilcarga8 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=8 header=no) 
+new loadshape.perfilcarga9 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=9 header=no) 
+new loadshape.perfilcarga10 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=10 header=no) 
+new loadshape.perfilcarga11 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=11 header=no) 
+new loadshape.perfilcarga12 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=12 header=no) 
+new loadshape.perfilcarga13 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=13 header=no) 
+new loadshape.perfilcarga14 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=14 header=no) 
+new loadshape.perfilcarga15 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=15 header=no) 
+new loadshape.perfilcarga16 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=16 header=no) 
+new loadshape.perfilcarga17 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=17 header=no) 
+new loadshape.perfilcarga18 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=18 header=no) 
+new loadshape.perfilcarga19 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=19 header=no) 
+new loadshape.perfilcarga20 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=20 header=no) 
+new loadshape.perfilcarga21 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=21 header=no) 
+new loadshape.perfilcarga22 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=22 header=no) 
+new loadshape.perfilcarga23 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=23 header=no) 
+new loadshape.perfilcarga24 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=24 header=no) 
+new loadshape.perfilcarga25 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=25 header=no) 
+new loadshape.perfilcarga26 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=26 header=no) 
+new loadshape.perfilcarga27 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=27 header=no) 
+new loadshape.perfilcarga28 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=28 header=no) 
+new loadshape.perfilcarga29 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=29 header=no) 
+new loadshape.perfilcarga30 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=30 header=no) 
+new loadshape.perfilcarga31 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=31 header=no) 
+new loadshape.perfilcarga32 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=32 header=no) 
+new loadshape.perfilEVdomiciliario1 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=1 header=no) 
+new loadshape.perfilEVdomiciliario2 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=2 header=no) 
+new loadshape.perfilEVdomiciliario3 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=3 header=no) 
+new loadshape.perfilEVdomiciliario4 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=4 header=no) 
+new loadshape.perfilEVdomiciliario5 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=5 header=no) 
+new loadshape.perfilEVdomiciliario6 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=6 header=no) 
+new loadshape.perfilEVdomiciliario7 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=7 header=no) 
+new loadshape.perfilEVdomiciliario8 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=8 header=no) 
+new loadshape.perfilEVdomiciliario9 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=9 header=no) 
+new loadshape.perfilEVdomiciliario10 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=10 header=no) 
+new loadshape.perfilEVdomiciliario11 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=11 header=no) 
+new loadshape.perfilEVdomiciliario12 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=12 header=no) 
+new loadshape.perfilEVdomiciliario13 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=13 header=no) 
+new loadshape.perfilEVdomiciliario14 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=14 header=no) 
+new loadshape.perfilEVdomiciliario15 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=15 header=no) 
+new loadshape.perfilEVdomiciliario16 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=16 header=no) 
+new loadshape.perfilEVdomiciliario17 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=17 header=no) 
+new loadshape.perfilEVdomiciliario18 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=18 header=no) 
+new loadshape.perfilEVdomiciliario19 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=19 header=no) 
+new loadshape.perfilEVdomiciliario20 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=20 header=no) 
+new loadshape.perfilEVdomiciliario21 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=21 header=no) 
+new loadshape.perfilEVdomiciliario22 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=22 header=no) 
+new loadshape.perfilEVdomiciliario23 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=23 header=no) 
+new loadshape.perfilEVdomiciliario24 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=24 header=no) 
+new loadshape.perfilEVdomiciliario25 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=25 header=no) 
+new loadshape.perfilEVdomiciliario26 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=26 header=no) 
+new loadshape.perfilEVdomiciliario27 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=27 header=no) 
+new loadshape.perfilEVdomiciliario28 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=28 header=no) 
+new loadshape.perfilEVdomiciliario29 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=29 header=no) 
+new loadshape.perfilEVdomiciliario30 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=30 header=no) 
+new loadshape.perfilEVdomiciliario31 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=31 header=no) 
+new loadshape.perfilEVdomiciliario32 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=32 header=no) 
+new loadshape.perfilgeneracion1 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=1 header=no) 
+new loadshape.perfilgeneracion2 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=2 header=no) 
+new loadshape.perfilgeneracion3 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=3 header=no) 
+new loadshape.perfilgeneracion4 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=4 header=no) 
+new loadshape.perfilEVCS1 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS2 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS3 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS4 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no) 
+new loadshape.perfilEVCS5 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no) 
+new loadshape.perfilEVCS6 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no) 
+new loadshape.perfilEVCS7 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no) 
+new loadshape.perfilEVCS8 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no) 
+new loadshape.perfilbatt1 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no) 
+new loadshape.perfilbatt2 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no) 
+new loadshape.perfilbatt3 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no) 
+new loadshape.perfilbatt4 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no) 
+new loadshape.perfilbatt5 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no) 
+new loadshape.perfilbatt6 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no) 
+new loadshape.perfilbatt7 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no) 
+new loadshape.perfilbatt8 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no) 

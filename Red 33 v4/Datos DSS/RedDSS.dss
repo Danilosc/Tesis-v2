@@ -1,0 +1,356 @@
+Set DefaultBaseFrequency=50 
+ clear 
+ Set datapath="C:\Users\dany_\Desktop\New tesis\Simulaciones Tesis\Red 33 v4\Datos DSS"  
+New circuit.redprueba basekV=132 pu=1.0 angle=0 frequency=50 phases=3 
+new transformer.TF1 phases=3 windings=2 buses=(sourcebus, 1) conns=(wye, wye) kvs=(132, 12.6) kvas=(5200, 5200) %loadloss=1.2 xhl=12.5  
+new linecode.C1-2 nphases=3 R1=0.922 X1=0.47 units=km  
+new linecode.C2-3 nphases=3 R1=0.986 X1=0.5022 units=km  
+new linecode.C3-4 nphases=3 R1=1.0457 X1=0.53257 units=km  
+new linecode.C4-5 nphases=3 R1=1.0889 X1=0.55457 units=km  
+new linecode.C5-6 nphases=3 R1=1.0237 X1=0.88375 units=km  
+new linecode.C6-7 nphases=3 R1=0.936 X1=3.094 units=km  
+new linecode.C7-8 nphases=3 R1=1.0163 X1=0.33586 units=km  
+new linecode.C8-9 nphases=3 R1=1.03 X1=0.74 units=km  
+new linecode.C9-10 nphases=3 R1=1.044 X1=0.74 units=km  
+new linecode.C10-11 nphases=3 R1=0.983 X1=0.325 units=km  
+new linecode.C11-12 nphases=3 R1=1.0697 X1=0.35371 units=km  
+new linecode.C12-13 nphases=3 R1=0.97867 X1=0.77 units=km  
+new linecode.C13-14 nphases=3 R1=0.98473 X1=1.2962 units=km  
+new linecode.C14-15 nphases=3 R1=0.985 X1=0.87667 units=km  
+new linecode.C15-16 nphases=3 R1=0.99507 X1=0.72667 units=km  
+new linecode.C16-17 nphases=3 R1=0.99154 X1=1.3238 units=km  
+new linecode.C17-18 nphases=3 R1=1.0457 X1=0.82 units=km  
+new linecode.C2-19 nphases=3 R1=1.0933 X1=1.0433 units=km  
+new linecode.C19-20 nphases=3 R1=1.0028 X1=0.9036 units=km  
+new linecode.C20-21 nphases=3 R1=1.0237 X1=1.196 units=km  
+new linecode.C21-22 nphases=3 R1=1.0127 X1=1.339 units=km  
+new linecode.C3-23 nphases=3 R1=1.0027 X1=0.68511 units=km  
+new linecode.C23-24 nphases=3 R1=0.99778 X1=0.78789 units=km  
+new linecode.C24-25 nphases=3 R1=0.99556 X1=0.779 units=km  
+new linecode.C6-26 nphases=3 R1=1.015 X1=0.517 units=km  
+new linecode.C26-27 nphases=3 R1=0.94733 X1=0.48233 units=km  
+new linecode.C27-28 nphases=3 R1=1.059 X1=0.9337 units=km  
+new linecode.C28-29 nphases=3 R1=1.0052 X1=0.87575 units=km  
+new linecode.C29-30 nphases=3 R1=1.015 X1=0.517 units=km  
+new linecode.C30-31 nphases=3 R1=1.0257 X1=1.0137 units=km  
+new linecode.C31-32 nphases=3 R1=1.035 X1=1.2063 units=km  
+new linecode.C32-33 nphases=3 R1=0.97429 X1=1.5149 units=km  
+new linecode.C25-29 nphases=3 R1=2 X1=2 units=km  
+new linecode.C8-21 nphases=3 R1=1 X1=1 units=km  
+new linecode.C12-22 nphases=3 R1=1 X1=1 units=km  
+new linecode.C9-15 nphases=3 R1=1 X1=1 units=km  
+new linecode.C18-33 nphases=3 R1=1 X1=1 units=km  
+new loadshape.perfilcarga1 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=1 header=no)  
+new loadshape.perfilcarga2 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=2 header=no)  
+new loadshape.perfilcarga3 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=3 header=no)  
+new loadshape.perfilcarga4 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=4 header=no)  
+new loadshape.perfilcarga5 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=5 header=no)  
+new loadshape.perfilcarga6 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=6 header=no)  
+new loadshape.perfilcarga7 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=7 header=no)  
+new loadshape.perfilcarga8 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=8 header=no)  
+new loadshape.perfilcarga9 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=9 header=no)  
+new loadshape.perfilcarga10 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=10 header=no)  
+new loadshape.perfilcarga11 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=11 header=no)  
+new loadshape.perfilcarga12 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=12 header=no)  
+new loadshape.perfilcarga13 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=13 header=no)  
+new loadshape.perfilcarga14 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=14 header=no)  
+new loadshape.perfilcarga15 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=15 header=no)  
+new loadshape.perfilcarga16 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=16 header=no)  
+new loadshape.perfilcarga17 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=17 header=no)  
+new loadshape.perfilcarga18 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=18 header=no)  
+new loadshape.perfilcarga19 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=19 header=no)  
+new loadshape.perfilcarga20 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=20 header=no)  
+new loadshape.perfilcarga21 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=21 header=no)  
+new loadshape.perfilcarga22 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=22 header=no)  
+new loadshape.perfilcarga23 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=23 header=no)  
+new loadshape.perfilcarga24 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=24 header=no)  
+new loadshape.perfilcarga25 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=25 header=no)  
+new loadshape.perfilcarga26 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=26 header=no)  
+new loadshape.perfilcarga27 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=27 header=no)  
+new loadshape.perfilcarga28 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=28 header=no)  
+new loadshape.perfilcarga29 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=29 header=no)  
+new loadshape.perfilcarga30 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=30 header=no)  
+new loadshape.perfilcarga31 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=31 header=no)  
+new loadshape.perfilcarga32 npts=8760 interval=1 pmult=(file=Perfiles_carga.csv, col=32 header=no)  
+new loadshape.perfilEVdomiciliario1 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=1 header=no)  
+new loadshape.perfilEVdomiciliario2 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=2 header=no)  
+new loadshape.perfilEVdomiciliario3 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=3 header=no)  
+new loadshape.perfilEVdomiciliario4 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=4 header=no)  
+new loadshape.perfilEVdomiciliario5 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=5 header=no)  
+new loadshape.perfilEVdomiciliario6 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=6 header=no)  
+new loadshape.perfilEVdomiciliario7 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=7 header=no)  
+new loadshape.perfilEVdomiciliario8 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=8 header=no)  
+new loadshape.perfilEVdomiciliario9 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=9 header=no)  
+new loadshape.perfilEVdomiciliario10 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=10 header=no)  
+new loadshape.perfilEVdomiciliario11 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=11 header=no)  
+new loadshape.perfilEVdomiciliario12 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=12 header=no)  
+new loadshape.perfilEVdomiciliario13 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=13 header=no)  
+new loadshape.perfilEVdomiciliario14 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=14 header=no)  
+new loadshape.perfilEVdomiciliario15 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=15 header=no)  
+new loadshape.perfilEVdomiciliario16 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=16 header=no)  
+new loadshape.perfilEVdomiciliario17 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=17 header=no)  
+new loadshape.perfilEVdomiciliario18 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=18 header=no)  
+new loadshape.perfilEVdomiciliario19 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=19 header=no)  
+new loadshape.perfilEVdomiciliario20 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=20 header=no)  
+new loadshape.perfilEVdomiciliario21 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=21 header=no)  
+new loadshape.perfilEVdomiciliario22 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=22 header=no)  
+new loadshape.perfilEVdomiciliario23 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=23 header=no)  
+new loadshape.perfilEVdomiciliario24 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=24 header=no)  
+new loadshape.perfilEVdomiciliario25 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=25 header=no)  
+new loadshape.perfilEVdomiciliario26 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=26 header=no)  
+new loadshape.perfilEVdomiciliario27 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=27 header=no)  
+new loadshape.perfilEVdomiciliario28 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=28 header=no)  
+new loadshape.perfilEVdomiciliario29 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=29 header=no)  
+new loadshape.perfilEVdomiciliario30 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=30 header=no)  
+new loadshape.perfilEVdomiciliario31 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=31 header=no)  
+new loadshape.perfilEVdomiciliario32 npts=8760 interval=1 pmult=(file=Perfiles_EVGA_dom.csv, col=32 header=no)  
+new loadshape.perfilgeneracion1 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=1 header=no)  
+new loadshape.perfilgeneracion2 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=2 header=no)  
+new loadshape.perfilgeneracion3 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=3 header=no)  
+new loadshape.perfilgeneracion4 npts=8760 interval=1 pmult=(file=Perfiles_solares.csv, col=4 header=no)  
+new loadshape.perfilEVCS1 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no)  
+new loadshape.perfilEVCS2 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no)  
+new loadshape.perfilEVCS3 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no)  
+new loadshape.perfilEVCS4 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=1 header=no)  
+new loadshape.perfilEVCS5 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no)  
+new loadshape.perfilEVCS6 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no)  
+new loadshape.perfilEVCS7 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no)  
+new loadshape.perfilEVCS8 npts=8760 interval=1 pmult=(file=Perfiles_EVCS.csv, col=2 header=no)  
+new loadshape.perfilbatt1 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no)  
+new loadshape.perfilbatt2 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no)  
+new loadshape.perfilbatt3 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no)  
+new loadshape.perfilbatt4 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=1 header=no)  
+new loadshape.perfilbatt5 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no)  
+new loadshape.perfilbatt6 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no)  
+new loadshape.perfilbatt7 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no)  
+new loadshape.perfilbatt8 npts=8760 interval=1 pmult=(file=Perfil_batt.csv, col=2 header=no)  
+new line.Linea1 bus1=1 bus2=2 length=100 phases=3 units=m linecode=C1-2  
+new line.Linea2 bus1=2 bus2=3 length=500 phases=3 units=m linecode=C2-3  
+new line.Linea3 bus1=3 bus2=4 length=350 phases=3 units=m linecode=C3-4  
+new line.Linea4 bus1=4 bus2=5 length=350 phases=3 units=m linecode=C4-5  
+new line.Linea5 bus1=5 bus2=6 length=800 phases=3 units=m linecode=C5-6  
+new line.Linea6 bus1=6 bus2=7 length=200 phases=3 units=m linecode=C6-7  
+new line.Linea7 bus1=7 bus2=8 length=700 phases=3 units=m linecode=C7-8  
+new line.Linea8 bus1=8 bus2=9 length=1000 phases=3 units=m linecode=C8-9  
+new line.Linea9 bus1=9 bus2=10 length=1000 phases=3 units=m linecode=C9-10  
+new line.Linea10 bus1=10 bus2=11 length=200 phases=3 units=m linecode=C10-11  
+new line.Linea11 bus1=11 bus2=12 length=350 phases=3 units=m linecode=C11-12  
+new line.Linea12 bus1=12 bus2=13 length=1500 phases=3 units=m linecode=C12-13  
+new line.Linea13 bus1=13 bus2=14 length=550 phases=3 units=m linecode=C13-14  
+new line.Linea14 bus1=14 bus2=15 length=600 phases=3 units=m linecode=C14-15  
+new line.Linea15 bus1=15 bus2=16 length=750 phases=3 units=m linecode=C15-16  
+new line.Linea16 bus1=16 bus2=17 length=1300 phases=3 units=m linecode=C16-17  
+new line.Linea17 bus1=17 bus2=18 length=700 phases=3 units=m linecode=C17-18  
+new line.Linea18 bus1=2 bus2=19 length=150 phases=3 units=m linecode=C2-19  
+new line.Linea19 bus1=19 bus2=20 length=1500 phases=3 units=m linecode=C19-20  
+new line.Linea20 bus1=20 bus2=21 length=400 phases=3 units=m linecode=C20-21  
+new line.Linea21 bus1=21 bus2=22 length=700 phases=3 units=m linecode=C21-22  
+new line.Linea22 bus1=3 bus2=23 length=450 phases=3 units=m linecode=C3-23  
+new line.Linea23 bus1=23 bus2=24 length=900 phases=3 units=m linecode=C23-24  
+new line.Linea24 bus1=24 bus2=25 length=900 phases=3 units=m linecode=C24-25  
+new line.Linea25 bus1=6 bus2=26 length=200 phases=3 units=m linecode=C6-26  
+new line.Linea26 bus1=26 bus2=27 length=300 phases=3 units=m linecode=C26-27  
+new line.Linea27 bus1=27 bus2=28 length=1000 phases=3 units=m linecode=C27-28  
+new line.Linea28 bus1=28 bus2=29 length=800 phases=3 units=m linecode=C28-29  
+new line.Linea29 bus1=29 bus2=30 length=500 phases=3 units=m linecode=C29-30  
+new line.Linea30 bus1=30 bus2=31 length=950 phases=3 units=m linecode=C30-31  
+new line.Linea31 bus1=31 bus2=32 length=300 phases=3 units=m linecode=C31-32  
+new line.Linea32 bus1=32 bus2=33 length=350 phases=3 units=m linecode=C32-33  
+new line.Linea33 bus1=25 bus2=29 length=250 phases=3 units=m linecode=C25-29  
+new line.Linea34 bus1=8 bus2=21 length=2000 phases=3 units=m linecode=C8-21  
+new line.Linea35 bus1=12 bus2=22 length=2000 phases=3 units=m linecode=C12-22  
+new line.Linea36 bus1=9 bus2=15 length=2000 phases=3 units=m linecode=C9-15  
+new line.Linea37 bus1=18 bus2=33 length=500 phases=3 units=m linecode=C18-33  
+new load.Load2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=100 kvar=60 model=1 yearly=perfilcarga1 status=variable 
+new load.LoadEVdom2 bus1=2.1.2 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario1 status=variable 
+new load.Load3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga2 status=variable 
+new load.LoadEVdom3 bus1=3.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario2 status=variable 
+new load.Load4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=120 kvar=80 model=1 yearly=perfilcarga3 status=variable 
+new load.LoadEVdom4 bus1=4.2.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario3 status=variable 
+new load.Load5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=30 model=1 yearly=perfilcarga4 status=variable 
+new load.LoadEVdom5 bus1=5.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario4 status=variable 
+new load.Load6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga5 status=variable 
+new load.LoadEVdom6 bus1=6.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario5 status=variable 
+new load.Load7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=200 kvar=100 model=1 yearly=perfilcarga6 status=variable 
+new load.LoadEVdom7 bus1=7.1.2.3 phases=3 conn=delta kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario6 status=variable 
+new load.Load8 bus1=8.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=100 model=1 yearly=perfilcarga7 status=variable 
+new load.LoadEVdom8 bus1=8.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario7 status=variable 
+new load.Load9 bus1=9.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga8 status=variable 
+new load.LoadEVdom9 bus1=9.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario8 status=variable 
+new load.Load10 bus1=10.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga9 status=variable 
+new load.LoadEVdom10 bus1=10.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario9 status=variable 
+new load.Load11 bus1=11.3 phases=1 conn=wye kV=7.3092 kW=45 kvar=30 model=1 yearly=perfilcarga10 status=variable 
+new load.LoadEVdom11 bus1=11.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario10 status=variable 
+new load.Load12 bus1=12.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=35 model=1 yearly=perfilcarga11 status=variable 
+new load.LoadEVdom12 bus1=12.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario11 status=variable 
+new load.Load13 bus1=13.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=35 model=1 yearly=perfilcarga12 status=variable 
+new load.LoadEVdom13 bus1=13.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario12 status=variable 
+new load.Load14 bus1=14.1.3 phases=2 conn=wye kV=12.6 kW=120 kvar=80 model=1 yearly=perfilcarga13 status=variable 
+new load.LoadEVdom14 bus1=14.1.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario13 status=variable 
+new load.Load15 bus1=15.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=10 model=1 yearly=perfilcarga14 status=variable 
+new load.LoadEVdom15 bus1=15.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario14 status=variable 
+new load.Load16 bus1=16.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga15 status=variable 
+new load.LoadEVdom16 bus1=16.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario15 status=variable 
+new load.Load17 bus1=17.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga16 status=variable 
+new load.LoadEVdom17 bus1=17.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario16 status=variable 
+new load.Load18 bus1=18.3 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga17 status=variable 
+new load.LoadEVdom18 bus1=18.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario17 status=variable 
+new load.Load19 bus1=19.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga18 status=variable 
+new load.LoadEVdom19 bus1=19.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario18 status=variable 
+new load.Load20 bus1=20.2 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga19 status=variable 
+new load.LoadEVdom20 bus1=20.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario19 status=variable 
+new load.Load21 bus1=21.3 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga20 status=variable 
+new load.LoadEVdom21 bus1=21.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario20 status=variable 
+new load.Load22 bus1=22.1 phases=1 conn=wye kV=7.3092 kW=90 kvar=40 model=1 yearly=perfilcarga21 status=variable 
+new load.LoadEVdom22 bus1=22.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario21 status=variable 
+new load.Load23 bus1=23.2 phases=1 conn=wye kV=7.3092 kW=90 kvar=50 model=1 yearly=perfilcarga22 status=variable 
+new load.LoadEVdom23 bus1=23.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario22 status=variable 
+new load.Load24 bus1=24.1.2.3 phases=3 conn=wye kV=12.6 kW=420 kvar=200 model=1 yearly=perfilcarga23 status=variable 
+new load.LoadEVdom24 bus1=24.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario23 status=variable 
+new load.Load25 bus1=25.1.2.3 phases=3 conn=delta kV=12.6 kW=420 kvar=200 model=1 yearly=perfilcarga24 status=variable 
+new load.LoadEVdom25 bus1=25.1.2.3 phases=3 conn=delta kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario24 status=variable 
+new load.Load26 bus1=26.3 phases=1 conn=wye kV=7.3092 kW=60 kvar=25 model=1 yearly=perfilcarga25 status=variable 
+new load.LoadEVdom26 bus1=26.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario25 status=variable 
+new load.Load27 bus1=27.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=25 model=1 yearly=perfilcarga26 status=variable 
+new load.LoadEVdom27 bus1=27.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario26 status=variable 
+new load.Load28 bus1=28.2 phases=1 conn=wye kV=7.3092 kW=60 kvar=20 model=1 yearly=perfilcarga27 status=variable 
+new load.LoadEVdom28 bus1=28.2 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario27 status=variable 
+new load.Load29 bus1=29.1.2 phases=2 conn=wye kV=12.6 kW=120 kvar=70 model=1 yearly=perfilcarga28 status=variable 
+new load.LoadEVdom29 bus1=29.1.2 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario28 status=variable 
+new load.Load30 bus1=30.3 phases=1 conn=wye kV=7.3092 kW=200 kvar=100 model=1 yearly=perfilcarga29 status=variable 
+new load.LoadEVdom30 bus1=30.3 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario29 status=variable 
+new load.Load31 bus1=31.2.3 phases=2 conn=wye kV=12.6 kW=150 kvar=70 model=1 yearly=perfilcarga30 status=variable 
+new load.LoadEVdom31 bus1=31.2.3 phases=2 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario30 status=variable 
+new load.Load32 bus1=32.1.2.3 phases=3 conn=wye kV=12.6 kW=210 kvar=100 model=1 yearly=perfilcarga31 status=variable 
+new load.LoadEVdom32 bus1=32.1.2.3 phases=3 conn=wye kV=12.6 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario31 status=variable 
+new load.Load33 bus1=33.1 phases=1 conn=wye kV=7.3092 kW=60 kvar=40 model=1 yearly=perfilcarga32 status=variable 
+new load.LoadEVdom33 bus1=33.1 phases=1 conn=wye kV=7.3092 kW=1 kvar=0 model=1 yearly=perfilEVdomiciliario32 status=variable 
+new generator.generador18 bus1=18.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion1 status=variable 
+new generator.generador22 bus1=22.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion2 status=variable 
+new generator.generador25 bus1=25.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion3 status=variable 
+new generator.generador33 bus1=33.1.2.3 phases=3 conn=wye kV=12.6 kW=200 kvar=0 model=1 yearly=perfilgeneracion4 status=variable 
+new swtcontrol.switch1 action=open delay=0 switchedObj=line.Linea33 
+new swtcontrol.switch2 action=open delay=0 switchedObj=line.Linea34 
+new swtcontrol.switch3 action=open delay=0 switchedObj=line.Linea35 
+new swtcontrol.switch4 action=open delay=0 switchedObj=line.Linea36 
+new swtcontrol.switch5 action=open delay=0 switchedObj=line.Linea37 
+set voltagebases=12.66 
+ calcvoltagebases 
+! Definición de monitores 
+set controlmode = static 
+set mode = yearly 
+set number = 8760 !horas 
+set stepsize = 1h 
+New EnergyMeter.meter1 element=transformer.tf1 Terminal=1 
+New monitor.Monitorvollin1 element=line.Linea1 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin2 element=line.Linea2 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin3 element=line.Linea3 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin4 element=line.Linea4 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin5 element=line.Linea5 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin6 element=line.Linea6 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin7 element=line.Linea7 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin8 element=line.Linea8 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin9 element=line.Linea9 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin10 element=line.Linea10 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin11 element=line.Linea11 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin12 element=line.Linea12 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin13 element=line.Linea13 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin14 element=line.Linea14 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin15 element=line.Linea15 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin16 element=line.Linea16 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin17 element=line.Linea17 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin18 element=line.Linea18 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin19 element=line.Linea19 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin20 element=line.Linea20 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin21 element=line.Linea21 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin22 element=line.Linea22 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin23 element=line.Linea23 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin24 element=line.Linea24 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin25 element=line.Linea25 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin26 element=line.Linea26 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin27 element=line.Linea27 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin28 element=line.Linea28 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin29 element=line.Linea29 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin30 element=line.Linea30 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin31 element=line.Linea31 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin32 element=line.Linea32 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin33 element=line.Linea33 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin34 element=line.Linea34 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin35 element=line.Linea35 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin36 element=line.Linea36 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorvollin37 element=line.Linea37 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitortvolnodotf1 element=transformer.TF1 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitortpownodotf1 element=transformer.TF1 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitortlossnodotf1 element=transformer.TF1 Terminal=1 mode=9 ppolar=no 
+New monitor.Monitorpownodo2 element=load.Load2 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo2 element=load.Load2 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo3 element=load.Load3 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo3 element=load.Load3 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo4 element=load.Load4 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo4 element=load.Load4 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo5 element=load.Load5 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo5 element=load.Load5 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo6 element=load.Load6 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo6 element=load.Load6 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo7 element=load.Load7 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo7 element=load.Load7 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo8 element=load.Load8 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo8 element=load.Load8 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo9 element=load.Load9 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo9 element=load.Load9 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo10 element=load.Load10 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo10 element=load.Load10 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo11 element=load.Load11 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo11 element=load.Load11 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo12 element=load.Load12 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo12 element=load.Load12 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo13 element=load.Load13 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo13 element=load.Load13 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo14 element=load.Load14 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo14 element=load.Load14 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo15 element=load.Load15 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo15 element=load.Load15 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo16 element=load.Load16 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo16 element=load.Load16 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo17 element=load.Load17 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo17 element=load.Load17 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo18 element=load.Load18 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo18 element=load.Load18 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo19 element=load.Load19 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo19 element=load.Load19 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo20 element=load.Load20 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo20 element=load.Load20 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo21 element=load.Load21 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo21 element=load.Load21 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo22 element=load.Load22 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo22 element=load.Load22 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo23 element=load.Load23 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo23 element=load.Load23 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo24 element=load.Load24 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo24 element=load.Load24 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo25 element=load.Load25 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo25 element=load.Load25 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo26 element=load.Load26 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo26 element=load.Load26 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo27 element=load.Load27 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo27 element=load.Load27 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo28 element=load.Load28 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo28 element=load.Load28 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo29 element=load.Load29 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo29 element=load.Load29 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo30 element=load.Load30 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo30 element=load.Load30 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo31 element=load.Load31 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo31 element=load.Load31 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo32 element=load.Load32 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo32 element=load.Load32 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpownodo33 element=load.Load33 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolnodo33 element=load.Load33 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpowgen18 element=generator.generador18 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolgen18 element=generator.generador18 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpowgen22 element=generator.generador22 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolgen22 element=generator.generador22 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpowgen25 element=generator.generador25 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolgen25 element=generator.generador25 Terminal=1 mode=0 ppolar=no 
+New monitor.Monitorpowgen33 element=generator.generador33 Terminal=1 mode=1 ppolar=no 
+New monitor.Monitorvolgen33 element=generator.generador33 Terminal=1 mode=0 ppolar=no 

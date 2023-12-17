@@ -1,0 +1,36 @@
+! Definición de monitores
+Set controlmode = static
+Set mode = yearly
+Set number = 8760 !horas
+Set stepsize = 1h
+New EnergyMeter.meter1 element=transformer.tf1 Terminal=1
+New monitor.Monitortvoltrafo1 element=transformer.TF1 Terminal=1 mode=0 ppolar=no
+New monitor.Monitortpowtrafo1 element=transformer.TF1 Terminal=1 mode=1 ppolar=no
+New monitor.Monitortlosstrafo1 element=transformer.TF1 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorpownodo2 element=load.Load2 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorpownodo3 element=load.Load3 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorpownodo4 element=load.Load4 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorpownodo5 element=load.Load5 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorpownodo6 element=generator.generador6 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvollin1 element=line.Linea1 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorlosslin1 element=line.Linea1 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorvollin2 element=line.Linea2 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorlosslin2 element=line.Linea2 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorvollin3 element=line.Linea3 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorlosslin3 element=line.Linea3 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorvollin4 element=line.Linea4 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorlosslin4 element=line.Linea4 Terminal=1 mode=9 ppolar=no
+New monitor.Monitorvollin5 element=line.Linea5 Terminal=1 mode=0 ppolar=no
+New monitor.Monitorlosslin5 element=line.Linea5 Terminal=1 mode=9 ppolar=no
+New monitor.MonitorpowEV1 element=load.LoadEV1 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo1 element=load.LoadEV1 Terminal=1 mode=0 ppolar=no
+New monitor.MonitorpowEV2 element=load.LoadEV2 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo2 element=load.LoadEV2 Terminal=1 mode=0 ppolar=no
+New monitor.MonitorpowEV3 element=load.LoadEV3 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo3 element=load.LoadEV3 Terminal=1 mode=0 ppolar=no
+New monitor.MonitorpowEV4 element=load.LoadEV4 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo4 element=load.LoadEV4 Terminal=1 mode=0 ppolar=no
+New monitor.MonitorpowEV5 element=load.LoadEV5 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo5 element=load.LoadEV5 Terminal=1 mode=0 ppolar=no
+New monitor.MonitorpowEV6 element=load.LoadEV6 Terminal=1 mode=1 ppolar=no
+New monitor.Monitorvolnodo6 element=load.LoadEV6 Terminal=1 mode=0 ppolar=no
